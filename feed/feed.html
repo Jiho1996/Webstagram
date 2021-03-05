@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Instagram</title>
-    <link href="style/common.css" rel="stylesheet" type="text/css" />
-    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="common.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
     <!-- favicon -->
-    <link rel="icon" href="img/favicon.png">
-    <link rel="instagram-icon" href="img/favicon.png">
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="instagram-icon" href="../img/favicon.png">
   </head>
   <body>
     <!-- navigation -->
@@ -17,12 +17,12 @@
         <div class="nav-1">
             <!-- <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="logo_img">
             <div class="vl"></div> -->
-            <img class="logo_instagram_txt" src="img/logo_text.png" alt="logo_text">
+            <img class="logo_instagram_txt" src="../img/logo_text.png" alt="logo_text">
         </div>
         <input id="searchInput" type="search" class="input-search" placeholder="검색">
         <div class="nav-2">
-          <img src="img/home.png" alt="홈">
-          <img src="img/dm.png" alt="DM">
+          <img src="../img/home.png" alt="홈">
+          <img src="../img/dm.png" alt="DM">
           <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="탐색">
           <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
           <img class="pic" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/71022783_513111249480681_2188078115513696256_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7Rl_bMO8TN4AX9C-AKS&oh=64741fc0f2635ebb63f94d5285798e08&oe=5F6A0524" alt="마이페이지">
@@ -48,7 +48,7 @@
             <div class="icons-left">
               <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
               <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="말풍선">
-              <img class="icon-react" src="img/dm.png" alt="DM">  
+              <img class="icon-react" src="../img/dm.png" alt="DM">  
             </div>
             <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="북마크">
           </div>
@@ -65,7 +65,13 @@
               <ul class="comments">
                 <li>
                   <span><span class="point-span userID">postmalone</span>내가 입으면 더 잘어울릴 것 같아</span>
-                  <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                  <div>
+                    <img class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+                    <div class="comment-like">
+                      <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                      <img class="comment-heart-liked" src="../img/liked.png" alt="좋아요된하트">
+                    </div>
+                  </div>
                 </li>
                 <!-- input 값 여기에 추가 -->
               </ul>
@@ -112,7 +118,13 @@
               <ul class="comments">
                 <li>
                   <span><span class="point-span userID">williamhammington</span>나도 호주 가고 싶다!</span>
-                  <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                  <div>
+                    <img class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+                    <div class="comment-like">
+                      <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                      <img class="comment-heart-liked" src="../img/liked.png" alt="좋아요된하트">
+                    </div>
+                  </div>
                 </li>
                 <!-- input 값 여기에 추가 -->
               </ul>
@@ -231,6 +243,5 @@
         </footer>
       </div>
     </main>
-    <script src="js/main.js"></script>
   </body>
 </html>
