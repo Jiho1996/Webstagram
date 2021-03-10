@@ -53,3 +53,12 @@ img.instagramText {
 #loginButton:focus {
     outline: none;
 }
+.signUpButton {
+    color : #00366B;
+    align-self: center;
+    font-size: 12px;
+    margin-top: 70px;
+}
+.signUpButton:hover {
+    cursor: pointer;
+}
