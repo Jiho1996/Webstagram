@@ -81,7 +81,7 @@ img.instagramText {
     padding: 5px;
     font-size: 14px;
   }
-  .btn-join {
+  .joinBtn {
     display: flex;
     align-items: center;
     cursor: pointer;
