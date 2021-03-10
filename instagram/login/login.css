@@ -1,4 +1,4 @@
-.container {
+.login_container {
     width: 350px;
     height: 380px;
     margin: 100px auto;
@@ -9,12 +9,12 @@
     background-color: #fff;
     border: 1px solid #DBDBDB;
 }
-img.logo_instagram {
+img.instagramText {
     align-self: center;
     width: 175px;
     margin: 35px 0;
 }
-.input_login {
+.userLogin {
     width: 270px;
     height: 40px;
     margin: 3px auto;
@@ -25,15 +25,12 @@ img.logo_instagram {
     border-radius: 3px;
     font-size: 14px;
 }
-.input_login::placeholder {
+.userLogin::placeholder {
     font-size: 12px;
     color: #8e8e8e;    
 }
-.input_login:focus {
-    border: 1px solid #8a8a8a;
-    outline: none;
-}
-#btn_login {
+
+#loginButton {
     width: 268px;
     height: 30px;
     margin: 13px auto;
@@ -44,27 +41,15 @@ img.logo_instagram {
     font-size: 14px;
     font-weight: 600;
 }
-#btn_login:disabled {
+#loginButton:disabled {
     background-color: #B9DFFC;
 }
-#btn_login:disabled:hover {
+#loginButton:disabled:hover {
     cursor: default;
 }
-#btn_login:enabled:hover {
+#loginButton:enabled:hover {
     cursor: pointer;
 }
-#btn_login:focus {
+#loginButton:focus {
     outline: none;
-}
-a {
-    cursor: default;
-}
-.button_forgot {
-    color : #00366B;
-    align-self: center;
-    font-size: 12px;
-    margin-top: 70px;
-}
-.button_forgot:hover {
-    cursor: pointer;
 }
