@@ -1,7 +1,10 @@
 .login_container {
     width: 350px;
     height: 380px;
-    margin: 100px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -12,7 +15,8 @@
 img.instagramText {
     align-self: center;
     width: 175px;
-    margin: 35px 0;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 .userLogin {
     width: 270px;
@@ -62,3 +66,28 @@ img.instagramText {
 .signUpButton:hover {
     cursor: pointer;
 }
+.joinInsta {
+    margin: auto ;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+  }
+  .join {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .btn-join {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    color: #0095f6;
+    padding: 5px;
+    border: 0;
+    font-weight: bold;
+  }
