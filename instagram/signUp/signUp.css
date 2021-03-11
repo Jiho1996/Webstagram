@@ -1,0 +1,109 @@
+.login_container {
+    width: 350px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+}
+img.instagramText {
+    align-self: center;
+    width: 175px;
+    margin-top: 48px;
+    margin-bottom: 12px;
+}
+
+.joinLetter {
+    color: #8e8e8e;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 40px 10px;
+    text-align: center;
+}
+.line{
+    
+    border :2px solid #DBDBDB; 
+    border-bottom: 0px;
+    width : 270px;
+    margin-bottom: 40px;
+}
+.userLogin {
+    width: 270px;
+    height: 40px;
+    margin: 3px auto;
+    padding: 0 10px;
+    display: block;
+    background-color: #fafafa;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.userLogin::placeholder {
+    font-size: 12px;
+    color: #8e8e8e;    
+}
+
+#loginButton {
+    width: 268px;
+    height: 30px;
+    margin: 13px auto;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+#loginButton:disabled {
+    background-color: #B9DFFC;
+}
+#loginButton:disabled:hover {
+    cursor: default;
+}
+#loginButton:enabled:hover {
+    cursor: pointer;
+}
+#loginButton:focus {
+    outline: none;
+}
+.signUpButton {
+    color : #00366B;
+    align-self: center;
+    font-size: 12px;
+    margin-top: 70px;
+}
+.signUpButton:hover {
+    cursor: pointer;
+}
+.joinInsta {
+    margin: auto ;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+  }
+  .join {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .joinBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    color: #0095f6;
+    padding: 5px;
+    border: 0;
+    font-weight: bold;
+  }
