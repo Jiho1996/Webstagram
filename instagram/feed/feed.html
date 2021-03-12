@@ -1,73 +1,38 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <title> 본인 프로필 </title>
-  </head>
-  <body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram</title>
+<link href="background.css" rel="stylesheet" type="text/css"/>
+<link href="nav.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="../img/icon.png">
 
-<!--HEADER-->
-<section class = "header">
-<div class="logo">
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fko%2Fpng-wpbna&psig=AOvVaw3Y_nQgLPWejvih6kBDt-0b&ust=1615202631677000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLC1rOyInu8CFQAAAAAdAAAAABAI" alt=""></i>
-</div>
-<div>
-<input type=text placeholder="검색">
-</div>
-
-<div class="icons">
-  <i class="fas fa-home"></i>
-  <i class="far fa-heart"></i>
-  <i class="far fa-compass"></i>
-</div>
-</section>
-
-
-<section class="post">
-            <div class="user">
-                <div class="profilface"><img src="imgs/thumb.jpeg" alt=""></div>
-                <div class="id">홍길동</div></div>
-
-
-
-            <div class="uploadedcontents">
-                <div class="cafe"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.agoda.com%2Fko-kr%2Flipe-bloom-cafe-and-hostel%2Fhotel%2Fkoh-lipe-th.html&psig=AOvVaw05hePwwH28Qog71QhBuZIc&ust=1615213243897000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDY-a-wnu8CFQAAAAAdAAAAABAD" alt="">
-                </div>  
-                <div class="text"> 날씨 좋다 </div>
-            </div>
-</section>
-                  
-
-  <!-- 좋아요, 저장하기 버튼 -->
-<section class="iconbar">
-<div class="icons">
-  <i class="far fa-heart"></i>
-  <i class="far fa-bookmark"></i>
-</div>
-</section>
-
-<!--- '홍길동00 외 여러명 좋아합니다' 대신 좋아요 n 개로 -->
-<div class="likes m_text">
-        좋아요
-        <span class="count">2,346</span>
-        개
+<header>
+  <div class="left_box">
+    <div class="camera_box">
+      <img class="camera" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
+        alt="인스타 사진" />
+    </div>
+    <div class="line">|</div>
+    <div class="logo_box">
+      <img class="logo" src="../img/logo_text.png" alt="인스타 로고" />
+    </div>
+  </div>
+ 
+    <div class="magnifier_box">
+      <img class="magnifier" src="../img/magnifier.png" alt="검색버튼">
     </div>
 
-<!--기재된 댓글-->
-<div class="comment_container">
-        <div class="comment">
-            <div class="nick_name m_text">dongdong2</div>
-            <div>사진이 좋아요</div>
-        </div>
-</div>
-
-<!-- 댓글 달기-->
-  <div class="comment_field">
-        <input type="text" placeholder="댓글달기...">
-        <div class="upload_btn m_text">게시</div>
+  <div class="right_box">
+    <div class="home_box">
+      <img class="img_size" src="../img/home.png" alt="탐색" />
     </div>
-
-                      
-
+    <div class="compass_box">
+      <img class="compass" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+        alt="내 프로필" />
+    </div>
+  </div>
+</header>
+<!--/header-->
 </body>
 </html>

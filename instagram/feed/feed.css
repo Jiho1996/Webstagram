@@ -1,0 +1,23 @@
+body {
+    background: #fafafa;
+}
+.instagramText{
+    display: inline-block;
+    background: url("../img/logo_text.png");
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navBarContainer {
+    width: 350px;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+}
