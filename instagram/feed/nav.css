@@ -56,22 +56,6 @@ header {
     justify-content: center;
   }
   
-  .seach_box {
-    display: flex;
-    align-items: center;
-  }
-  .search {
-    display: flex;
-    position: relative;
-    align-items: center;
-    left: -10px;
-    top: -2px;
-    height: 27px;
-    width: 215px;
-    background-color: #fafafa;
-    border: 1px solid #dbdbdb;
-  }
-  
   .magnifier {
     position: absolute;
     top: 35%;
