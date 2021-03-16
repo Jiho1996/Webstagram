@@ -1,12 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Instagram</title>
 <link href="background.css" rel="stylesheet" type="text/css"/>
-<link href="nav.css" rel="stylesheet" type="text/css" />
+<link href="feed.css" rel="stylesheet" type="text/css" />
 <link rel="icon" href="../img/icon.png">
+<body>
+  <div class="main">
+    <section class="card_section">
+        <div class="card">
+            <header>
+                <div class="user_name">username</div>
+            </header>
+            <div class="card_image">
+                <img src="../img/ssu_likelion_logo.png" alt="sample">
+            </div>
+            <div class="info">
+                <div class="info_left">
+                  <img class="feedImg" src="../../instagram/img/liked.png" alt="좋아용" />
+                  <img class="feedImg" src="../../instagram/img/comment.png" alt="코멘트" />
+                  <img class="feedImg" src="../../instagram/img/upload.png" alt="업로드" />
+                </div>
+                <div class="info_right">
+                  <img class="feedImg" src="../../instagram/img/bookmark.png" alt="북마크" />
+                </div>
+            </div>
+            <div class="comment">
+                comment1<br>
+                comment2<br>
+            </div>
+            <div class="comment_form">
+                <form action="">
+                    <input type="text" placeholder="댓글 입력..">
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
 
 
 </body>
 </html>
+{%endblock content %}
