@@ -1,23 +1,72 @@
-body {
-    background: #fafafa;
+body{
+    margin : 0;
 }
-.instagramText{
-    display: inline-block;
-    background: url("../img/logo_text.png");
-    margin-top: 10px;
-    margin-left: 10px;
+.main{
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 100vh;
+    width: 100vw;
 }
-.navBarContainer {
-    width: 350px;
-    height: 380px;
+
+.user_name{
+    height : 30px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+}
+.card_image img{
+    width: 100%;
+}
+.card{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 100px;
+    border: 1px solid #efefef;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    
+}
+.info i{
+    font-size: 1.5rem;
+}
+
+.main{
+    margin: 1rem;
+}
+.feedImg{
+    height: 22px;
+    width: 22px;
+}
+.info{
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #fff;
-    border: 1px solid #DBDBDB;
+    width: 100%;
+}
+.comment{
+
+    background-color: #fff;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+ 
+.comment_form form{
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+ 
+.comment_form form input{
+    width: 550px;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+}
+ 
+.comment_form form #submit{
+    border: none;
+    background-color: white;
 }
