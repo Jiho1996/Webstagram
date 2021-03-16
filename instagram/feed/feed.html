@@ -1,6 +1,4 @@
-{% extends 'base.html' %}
 
-{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,21 +9,21 @@
 <link rel="icon" href="../img/icon.png">
 <body>
   <div class="main">
-    <section class="card_section">
-        <div class="card">
+    <section class="cardViewSection">
+        <div class="cardView">
             <header>
-                <div class="user_name">username</div>
+                <div class="userNickName">userNickName</div>
             </header>
-            <div class="card_image">
+            <div class="cardImage">
                 <img src="../img/ssu_likelion_logo.png" alt="sample">
             </div>
-            <div class="info">
-                <div class="info_left">
+            <div class="cardInfo">
+                <div class="infoLeft">
                   <img class="feedImg" src="../../instagram/img/liked.png" alt="좋아용" />
                   <img class="feedImg" src="../../instagram/img/comment.png" alt="코멘트" />
                   <img class="feedImg" src="../../instagram/img/upload.png" alt="업로드" />
                 </div>
-                <div class="info_right">
+                <div class="infoRight">
                   <img class="feedImg" src="../../instagram/img/bookmark.png" alt="북마크" />
                 </div>
             </div>
@@ -46,4 +44,3 @@
 
 </body>
 </html>
-{%endblock content %}

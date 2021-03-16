@@ -10,16 +10,16 @@ body{
     width: 100vw;
 }
 
-.user_name{
-    height : 30px;
+.userNickName{
+    height : 50px;
     display: flex;
-    top: 50%;
-    left: 50%;
+    line-height: 50px;
+    margin-left: 10px;
 }
-.card_image img{
+.cardImage img{
     width: 100%;
 }
-.card{
+.cardView{
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #efefef;
@@ -27,9 +27,6 @@ body{
     width: 500px;
     height: 500px;
     
-}
-.info i{
-    font-size: 1.5rem;
 }
 
 .main{
@@ -39,7 +36,7 @@ body{
     height: 22px;
     width: 22px;
 }
-.info{
+.cardInfo{
     display: flex;
     justify-content: space-between;
     background-color: #fff;
