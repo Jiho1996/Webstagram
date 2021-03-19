@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import createPost
 
 # Create your views here.
 
@@ -7,3 +8,8 @@ def home(request):
 
 def board(request):
     return render(request,'home/board.html')
+ 
+def createPost(request):
+    form = CreatePost()
+ 
+    return render(request, 'createPost.html', {'form': form})

@@ -22,4 +22,6 @@ urlpatterns = [
     path('',include('home.urls')),
     #path('board/', include('board.urls')),
     #path('',home.views.home,name='home'),
+    path('home/createPost/', blogapp.views.createPost, name='createPost'),
+
 ]
