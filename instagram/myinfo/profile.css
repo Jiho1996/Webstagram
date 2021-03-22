@@ -1,4 +1,3 @@
-
 :root {
     font-size: 10px;
 }
@@ -26,7 +25,7 @@ img {
     display: block;
 }
 
-.container {
+.galleryContainer {
     max-width: 93.5rem;
     margin: 0 auto;
     padding: 0 2rem;
@@ -47,24 +46,19 @@ img {
 }
 
 .visually-hidden {
-    position: absolute !important;
+   
     height: 1px;
     width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
+   
 }
 
 /* Profile Section */
 
 .profile {
-    padding: 5rem 0;
+    padding: 100px;
+    margin-left: 200px;
 }
 
-.profile::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 
 .profile-image {
     float: left;
@@ -79,30 +73,31 @@ img {
     border-radius: 50%;
 }
 
-.profile-user-settings,
-.profile-stats,
-.profile-bio {
+.profileUserSetting,
+.profileStats,
+.profileIntro {
     float: left;
     width: calc(66.666% - 2rem);
 }
 
-.profile-user-settings {
+.profileUserSetting {
     margin-top: 1.1rem;
 }
 
-.profile-user-name {
+.profileUserName {
     display: inline-block;
     font-size: 3.2rem;
     font-weight: 300;
 }
 
-.profile-edit-btn {
+.profileEdit {
     font-size: 1.4rem;
     line-height: 1.8;
     border: 0.1rem solid #dbdbdb;
     border-radius: 0.3rem;
     padding: 0 2.4rem;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 .profile-settings-btn {
@@ -110,11 +105,11 @@ img {
     margin-left: 1rem;
 }
 
-.profile-stats {
+.profileStats {
     margin-top: 2.3rem;
 }
 
-.profile-stats li {
+.profileStats li {
     display: inline-block;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -122,20 +117,20 @@ img {
     cursor: pointer;
 }
 
-.profile-stats li:last-of-type {
+.profileStats li:last-of-type {
     margin-right: 0;
 }
 
-.profile-bio {
+.profileIntro {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
     margin-top: 2.3rem;
 }
 
-.profile-real-name,
-.profile-stat-count,
-.profile-edit-btn {
+.profileIntroduce,
+.profileStatsNum,
+.profileEdit {
     font-weight: 600;
 }
 
@@ -148,7 +143,7 @@ img {
     padding-bottom: 3rem;
 }
 
-.gallery-item {
+.galleryPicture {
     position: relative;
     flex: 1 0 22rem;
     margin: 1rem;
@@ -156,8 +151,8 @@ img {
     cursor: pointer;
 }
 
-.gallery-item:hover .gallery-item-info,
-.gallery-item:focus .gallery-item-info {
+.galleryPicture:hover .galleryPictureInfo,
+.galleryPicture:focus .galleryPictureInfo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,21 +163,21 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.gallery-item-info {
+.galleryPictureInfo {
     display: none;
 }
 
-.gallery-item-info li {
+.galleryPictureInfo li {
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 600;
 }
 
-.gallery-item-likes {
+.galleryPictureLikes {
     margin-right: 2.2rem;
 }
 
-.gallery-item-type {
+.galleryPicture-type {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -190,8 +185,8 @@ img {
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
-.fa-clone,
-.fa-comment {
+.clone,
+.comment {
     transform: rotateY(180deg);
 }
 
@@ -201,17 +196,7 @@ img {
     object-fit: cover;
 }
 
-/* Loader */
 
-.loader {
-    width: 5rem;
-    height: 5rem;
-    border: 0.6rem solid #999;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: loader 500ms linear infinite;
-}
 
 /* Media Query */
 
@@ -227,9 +212,9 @@ img {
     }
 
     .profile-image,
-    .profile-user-settings,
-    .profile-bio,
-    .profile-stats {
+    .profileUserSetting,
+    .profileIntro,
+    .profileStats {
         float: none;
         width: auto;
     }
@@ -238,45 +223,45 @@ img {
         width: 7.7rem;
     }
 
-    .profile-user-settings {
+    .profileUserSetting {
         flex-basis: calc(100% - 10.7rem);
         display: flex;
         flex-wrap: wrap;
         margin-top: 1rem;
     }
 
-    .profile-user-name {
+    .profileUserName {
         font-size: 2.2rem;
     }
 
-    .profile-edit-btn {
+    .profileEdit {
         order: 1;
         padding: 0;
         text-align: center;
         margin-top: 1rem;
     }
 
-    .profile-edit-btn {
+    .profileEdit {
         margin-left: 0;
     }
 
-    .profile-bio {
+    .profileIntro {
         font-size: 1.4rem;
         margin-top: 1.5rem;
     }
 
-    .profile-edit-btn,
-    .profile-bio,
-    .profile-stats {
+    .profileEdit,
+    .profileIntro,
+    .profileStats {
         flex-basis: 100%;
     }
 
-    .profile-stats {
+    .profileStats {
         order: 1;
         margin-top: 1.5rem;
     }
 
-    .profile-stats ul {
+    .profileStats ul {
         display: flex;
         text-align: center;
         padding: 1.2rem 0;
@@ -284,33 +269,22 @@ img {
         border-bottom: 0.1rem solid #dadada;
     }
 
-    .profile-stats li {
+    .profileStats li {
         font-size: 1.4rem;
         flex: 1;
         margin: 0;
     }
 
-    .profile-stat-count {
+    .profileStatsNum {
         display: block;
     }
 }
-
-/* Spinner Animation */
 
 @keyframes loader {
     to {
         transform: rotate(360deg);
     }
 }
-
-/*
-
-The following code will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox & floated styling. 
-
-*/
-
 @supports (display: grid) {
     .profile {
         display: grid;
@@ -331,10 +305,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 
     .profile-image,
-    .profile-user-settings,
-    .profile-stats,
-    .profile-bio,
-    .gallery-item,
+    .profileUserSetting,
+    .profileStats,
+    .profileIntro,
+    .galleryPicture,
     .gallery {
         width: auto;
         margin: 0;
@@ -350,23 +324,23 @@ Remove or comment-out the code block below to see how the browser will fall-back
             grid-row: 1 / 2;
         }
 
-        .profile-user-settings {
+        .profileUserSetting {
             display: grid;
             grid-template-columns: auto 1fr;
             grid-gap: 1rem;
         }
 
-        .profile-edit-btn,
-        .profile-stats,
-        .profile-bio {
+        .profileEdit,
+        .profileStats,
+        .profileIntro {
             grid-column: 1 / -1;
         }
 
-        .profile-user-settings,
-        .profile-edit-btn,
+        .profileUserSetting,
+        .profileEdit,
         .profile-settings-btn,
-        .profile-bio,
-        .profile-stats {
+        .profileIntro,
+        .profileStats {
             margin: 0;
         }
     }
