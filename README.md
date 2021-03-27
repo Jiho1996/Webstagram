@@ -23,6 +23,14 @@ With HTML , CSS , Django
 </p>
 <br>
 
+<br>
+  <h3 align = "center"> 피드 ( 메인화면 ) </h3>
+  
+  
+  <p align="center">
+	<img src="https://user-images.githubusercontent.com/65906458/112728253-b7a03500-8f69-11eb-9ddb-5bb6cc81a770.jpg" />
+</p>
+<br>
 
 <br>
   <h3 align = "center"> 내 프로필 </h3>
@@ -32,3 +40,14 @@ With HTML , CSS , Django
 	<img src="https://user-images.githubusercontent.com/65906458/112728276-c8e94180-8f69-11eb-9877-3dc1f38c03e3.png" />
 </p>
 <br>
+
+<br>
+  <h3 align = "center"> base.html </h3>
+  
+  
+  <p align="center">
+	<img src="https://user-images.githubusercontent.com/65906458/112728248-b111bd80-8f69-11eb-9980-0d236e1090e5.jpg" />
+</p>
+<br>
+
+
